@@ -1,0 +1,7 @@
+whatsapp/
+files/
+
+*.txt
+*.db
+*.db.crypt15
+*json
