@@ -1,7 +1,11 @@
 whatsapp/
 files/
+test/
 
-*.txt
+key.txt
+encrypted_backup.key
 *.db
 *.db.crypt15
 *json
+
+venv/

@@ -1,0 +1,2 @@
+wa-crypt-tools
+whatsapp-chat-exporter
