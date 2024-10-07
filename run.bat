@@ -2,6 +2,7 @@
 
 
 mkdir files
+wacreatekey --hex key.txt
 wadecrypt encrypted_backup.key ./msgstore.db.crypt15 ./files/msgstore.db
 wadecrypt encrypted_backup.key ./wa.db.crypt15 ./files/wa.db
 
