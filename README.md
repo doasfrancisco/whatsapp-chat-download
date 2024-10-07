@@ -2,14 +2,22 @@
 
 1. Activate E2E in WhatsApp and choose to get a hexadecimal key. Save key in `key.txt`
 
-2. Use https://github.com/ElDavoo/wa-crypt-tools to decrypt your WhatsApp backup
+2. In your phone:
+
+    - Go to `Android/media/com.whatsapp/WhatsApp/Databases` to get `msgstore.db.crypt15`.
+
+    - Go to `Android/media/com.whatsapp/WhatsApp/Backups` to get `wa.db.crypt15`.
+
+    - Put both files in working directory
+
+3. Use https://github.com/ElDavoo/wa-crypt-tools to decrypt your WhatsApp backup
 
     ```bash
     pip install wa-crypt-tools
     ```
 
     ```bash
-    wacreatekey --hex key.txt
+    wacreatekey --hex (Get-Content key.txt) #Powershell only
     ```
      
     ```bash
@@ -20,7 +28,7 @@
     wadecrypt encrypted_backup.key ./wa.db.crypt15 ./wa.db
     ```
             
-3. Use https://github.com/KnugiHK/WhatsApp-Chat-Exporter to access your chats in html and json format
+4. Use https://github.com/KnugiHK/WhatsApp-Chat-Exporter to access your chats in html and json format
         
     ```bash
     pip install whatsapp-chat-exporter
@@ -32,7 +40,7 @@
     wtsexporter -a
     ```
 
-4. Configure daily WhatsApp backups and code something that decrypts them and sends the SQL data from your phone to a server to automatize user feedback. 
+5. Configure daily WhatsApp backups and code something that decrypts them and sends the SQL data from your phone to a server to automatize user feedback. 
 
 # Media folders
 
