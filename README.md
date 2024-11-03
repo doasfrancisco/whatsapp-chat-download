@@ -1,12 +1,12 @@
 # How to download all my WhatsApp chats?
 
-1. Activate E2E in WhatsApp and choose to get a hexadecimal key. Create `key.txt` file with the key.
+1. Activate E2E in WhatsApp and choose to get a hexadecimal key. Create a `key.txt` file with the key in this repository.
 
 2. In your phone:
 
-    - Go to `Android/media/com.whatsapp/WhatsApp/Databases` to get `msgstore.db.crypt15`.
+    - Go to `Android/media/com.whatsapp/WhatsApp/Databases` and get `msgstore.db.crypt15`.
 
-    - Go to `Android/media/com.whatsapp/WhatsApp/Backups` to get `wa.db.crypt15`.
+    - Then go to `Android/media/com.whatsapp/WhatsApp/Backups` to get `wa.db.crypt15`.
 
     - Put both files in working directory
 
